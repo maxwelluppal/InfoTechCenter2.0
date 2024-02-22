@@ -13,7 +13,7 @@ def gasLevelGauge():
 
 #Function that lists Gas Stations, randomly choosing one and returning its value
 def listOfGasStations():
-    gasStationList = ["Shell","Speedway","Marathon","Circle K","Moble","CostCo","Meijer","7-Eleven"]
+    gasStationList = ["Shell","Speedway","Marathon","Circle K","Mobil","CostCo","Meijer","7-Eleven"]
     gasStationsNearby = random.choice(gasStationList)
     return gasStationsNearby
 
@@ -36,7 +36,7 @@ def gasLevelAlert():
         sleep(2.5)
         print("The closest gas station is",listOfGasStations(),"which is",milesToGasStationQuarterTank,"miles away.")
     elif gasLevelIndicator == "Half Tank":
-        print("Your gas tank is on a half-tank, which is plenty to reach your destination."
+        print("Your gas tank is on a half-tank, which is plenty to reach your destination.")
     elif gasLevelIndicator == "Three Quarter Tank":
         print("Your gas tank is at three quarter tank.")
     else:
